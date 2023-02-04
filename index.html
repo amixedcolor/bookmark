@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta property='og:type' content='website'>
+        <meta property='og:title' content="リードスキャン">
+        <!-- <meta property='og:url' content=''> -->
+        <meta property='og:description' content='本を電子世界に移しましょう！'>
+        <meta property="og:image" content="img/ogp.png"> <!--これはSNSなどにシェアするときのサムネイル-->
+        <meta name="description" content="本を電子世界に移しましょう！" />
+        <title>リードスキャン</title>
+        <link href="./css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link rel="shortcut icon" href="images/parascan_logo.png" /> -->
+        <!-- <link rel="canonical" href="" /> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- <img src="./images/parascan_logo.png"> -->
+            <h1>リードスキャン</h1>
+        </header>
+        <main>
+            <!-- <P>本をパラパラめくる動画をテキストに変換できます。<br>動画を撮ってアップロードしてみましょう。</P> -->
+            <div>
+                <!-- <form action="https://8306-240b-10-84e1-f800-3d1b-3ae6-95de-f512.jp.ngrok.io/api/upload/" 
+                        enctype="multipart/form-data"
+                        method="POST"
+                        id = "upload">  -->
+                    <label>
+                        ブックマークとしてスキャン
+                        <input type="file" id="environment" capture="environment" accept="image/*">
+                    </label>
+                    記録を残す
+                    <label id="emote1">
+                        🤣
+                        <!-- <input type="submit" id="submit-button" value="送信"> -->
+                        <button id="submit-button1" type="button" ></button>
+                    </label>
+                    <label id="emote2">
+                        😍
+                        <!-- <input type="submit" id="submit-button" value="送信"> -->
+                        <button id="submit-button2" type="button" ></button>
+                    </label>
+                    <label id="emote3">
+                        😭
+                        <!-- <input type="submit" id="submit-button" value="送信"> -->
+                        <button id="submit-button3" type="button" ></button>
+                    </label>
+                    <label id="emote4">
+                        😡
+                        <!-- <input type="submit" id="submit-button" value="送信"> -->
+                        <button id="submit-button4" type="button" ></button>
+                    </label>
+                    <label id="emote5">
+                        😱
+                        <!-- <input type="submit" id="submit-button" value="送信"> -->
+                        <button id="submit-button5" type="button" ></button>
+                    </label>
+                    <!-- </form> -->
+                </div>
+            <p id="foutput"></p>
+            <!-- <div id="mask" class="hidden">
+            <div id="blank"></div>
+            <div id="modal" class="hidden loader"></div>
+                <progress id="progress" class="hidden" value="0" max="100">0%</progress>
+            </div> -->
+            <!-- <section id="modal" class="hidden">
+                <p>変換中</p>
+            </section> -->
+        </main>
+        <script type='text/javascript' src="./js/script.js"></script>
+    </body>
+</html>
